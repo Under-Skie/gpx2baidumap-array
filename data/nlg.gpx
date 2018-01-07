@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gpx version="1.1" creator="JOSM GPX export" xmlns="http://www.topografix.com/GPX/1/1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <bounds minlat="32.0214013" minlon="118.8455088" maxlat="32.0386719" maxlon="118.8584787"/>
+  </metadata>
+  <wpt lat="32.0256206" lon="118.8513592">
+    <time>2012-04-10T16:27:20Z</time>
+    <src>bing</src>
+  </wpt>
+  <wpt lat="32.0379751" lon="118.8476728">
+    <time>2011-11-05T15:42:55Z</time>
+    <name>理工大学3号门</name>
+    <src>Survey`</src>
+  </wpt>
+  <wpt lat="32.0258964" lon="118.8480054">
+    <time>2011-11-18T12:04:59Z</time>
+    <name>南京理工大学4号门</name>
+    <src>bing and Survey</src>
+  </wpt>
+  <wpt lat="32.0350605" lon="118.8544836">
+    <time>2012-04-10T16:20:42Z</time>
+    <name>理工大学1号门</name>
+    <src>bing and Survey</src>
+  </wpt>
+  <wpt lat="32.0312791" lon="118.8460619">
+    <time>2011-11-10T16:29:05Z</time>
+    <name>南京理工大学7号门</name>
+    <src>bing and Survey</src>
+  </wpt>
+  <wpt lat="32.0253418" lon="118.8532513">
+    <time>2011-11-18T12:04:56Z</time>
+    <name>南京理工大学6号门</name>
+  </wpt>
+  <wpt lat="32.0256206" lon="118.8517292">
+    <time>2012-04-10T16:27:21Z</time>
+    <src>bing</src>
+  </wpt>
+  <wpt lat="32.0370258" lon="118.8512362">
+    <time>2012-05-18T18:11:05Z</time>
+    <name>南京理工大学2号门</name>
+  </wpt>
+  <wpt lat="32.0370252" lon="118.8515169">
+    <time>2012-05-18T18:11:05Z</time>
+    <name>南京理工大学2号门</name>
+  </wpt>
+  <wpt lat="32.0249741" lon="118.8529424">
+    <time>2012-05-23T19:07:21Z</time>
+  </wpt>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0256219" lon="118.8518775">
+        <time>2012-05-18T13:39:19Z</time>
+      </trkpt>
+      <trkpt lat="32.0256206" lon="118.8517292">
+        <time>2012-04-10T16:27:21Z</time>
+        <src>bing</src>
+      </trkpt>
+      <trkpt lat="32.0256206" lon="118.8513592">
+        <time>2012-04-10T16:27:20Z</time>
+        <src>bing</src>
+      </trkpt>
+      <trkpt lat="32.0256207" lon="118.8511467">
+        <time>2012-04-10T16:27:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0254737" lon="118.851076">
+        <time>2012-04-10T16:27:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0257345" lon="118.8493966">
+        <time>2012-04-10T16:27:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0257744" lon="118.8488817">
+        <time>2012-04-10T16:27:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0257844" lon="118.8481755">
+        <time>2012-04-10T16:27:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0258964" lon="118.8480054">
+        <time>2011-11-18T12:04:59Z</time>
+        <name>南京理工大学4号门</name>
+        <src>bing and Survey</src>
+      </trkpt>
+      <trkpt lat="32.0258348" lon="118.847867">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0258317" lon="118.8464761">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0259054" lon="118.8463384">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0251579" lon="118.8551178">
+        <time>2012-04-15T15:50:45Z</time>
+      </trkpt>
+      <trkpt lat="32.0241811" lon="118.8550589">
+        <time>2012-04-15T15:50:45Z</time>
+      </trkpt>
+      <trkpt lat="32.0238449" lon="118.8548746">
+        <time>2012-04-15T15:50:44Z</time>
+      </trkpt>
+      <trkpt lat="32.0230034" lon="118.8547804">
+        <time>2012-04-15T15:50:44Z</time>
+      </trkpt>
+      <trkpt lat="32.0230068" lon="118.8541635">
+        <time>2012-04-15T15:50:44Z</time>
+      </trkpt>
+      <trkpt lat="32.0221479" lon="118.8541937">
+        <time>2012-05-23T19:53:21Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0214384" lon="118.8531795">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0220589" lon="118.8532619">
+        <time>2012-05-23T19:53:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0221479" lon="118.8541937">
+        <time>2012-05-23T19:53:21Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0249663" lon="118.8506797">
+        <time>2012-04-15T15:05:41Z</time>
+      </trkpt>
+      <trkpt lat="32.0252416" lon="118.8506798">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0251579" lon="118.8551178">
+        <time>2012-04-15T15:50:45Z</time>
+      </trkpt>
+      <trkpt lat="32.0249936" lon="118.8537747">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0249936" lon="118.8537747">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.024977" lon="118.8535019">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0249741" lon="118.8529424">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0249862" lon="118.8525044">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0250269" lon="118.8519981">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0251916" lon="118.8509635">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+      <trkpt lat="32.0252416" lon="118.8506798">
+        <time>2012-05-23T19:07:21Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0242504" lon="118.8508955">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.024272" lon="118.8528339">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0239858" lon="118.852839">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0235912" lon="118.8529976">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0234651" lon="118.8530641">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0234452" lon="118.8534239">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0229141" lon="118.8534565">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0229103" lon="118.8522856">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0227065" lon="118.8521424">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0221428" lon="118.8522804">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0214013" lon="118.8525055">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0214384" lon="118.8531795">
+        <time>2012-04-15T15:05:39Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0242504" lon="118.8508955">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0242509" lon="118.8506593">
+        <time>2012-04-15T15:05:40Z</time>
+      </trkpt>
+      <trkpt lat="32.0249663" lon="118.8506797">
+        <time>2012-04-15T15:05:41Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="32.0259054" lon="118.8463384">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0274347" lon="118.8462443">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.029136" lon="118.8461465">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0308195" lon="118.8460043">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0311704" lon="118.8459797">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0312011" lon="118.8460522">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0312791" lon="118.8460619">
+        <time>2011-11-10T16:29:05Z</time>
+        <name>南京理工大学7号门</name>
+        <src>bing and Survey</src>
+      </trkpt>
+      <trkpt lat="32.0313731" lon="118.8460594">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0314437" lon="118.8459689">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0322083" lon="118.8459073">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0333261" lon="118.8458348">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0345605" lon="118.8457551">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0358256" lon="118.8456646">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0372012" lon="118.8455378">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0376802" lon="118.8455088">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0384509" lon="118.8459109">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0386719" lon="118.8460703">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0381776" lon="118.8476206">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0380179" lon="118.847617">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0379751" lon="118.8476728">
+        <time>2011-11-05T15:42:55Z</time>
+        <name>理工大学3号门</name>
+        <src>Survey`</src>
+      </trkpt>
+      <trkpt lat="32.0379596" lon="118.8478379">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.037739" lon="118.8486905">
+        <time>2011-12-23T14:54:23Z</time>
+      </trkpt>
+      <trkpt lat="32.0376541" lon="118.8486973">
+        <time>2011-12-23T14:54:05Z</time>
+      </trkpt>
+      <trkpt lat="32.0376648" lon="118.8491202">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0374161" lon="118.8491383">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0374161" lon="118.8495077">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0372687" lon="118.8499496">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0372073" lon="118.8505582">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0374008" lon="118.850569">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0373486" lon="118.8509204">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.037149" lon="118.8509856">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0370231" lon="118.8510218">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0370258" lon="118.8512362">
+        <time>2012-05-18T18:11:05Z</time>
+        <name>南京理工大学2号门</name>
+      </trkpt>
+      <trkpt lat="32.0370255" lon="118.851358">
+        <time>2012-05-18T18:11:06Z</time>
+      </trkpt>
+      <trkpt lat="32.0370252" lon="118.8515169">
+        <time>2012-05-18T18:11:05Z</time>
+        <name>南京理工大学2号门</name>
+      </trkpt>
+      <trkpt lat="32.0370292" lon="118.8516638">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0373516" lon="118.8517145">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0374161" lon="118.8522216">
+        <time>2011-12-05T13:16:49Z</time>
+      </trkpt>
+      <trkpt lat="32.0366853" lon="118.8523846">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.035497" lon="118.8524535">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.035497" lon="118.8528338">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0350569" lon="118.8533809">
+        <time>2012-05-18T19:06:39Z</time>
+      </trkpt>
+      <trkpt lat="32.0350605" lon="118.8544836">
+        <time>2012-04-10T16:20:42Z</time>
+        <name>理工大学1号门</name>
+        <src>bing and Survey</src>
+      </trkpt>
+      <trkpt lat="32.0349842" lon="118.8556844">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0338174" lon="118.8556881">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0329484" lon="118.8556989">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0331054" lon="118.8582473">
+        <time>2011-12-05T13:16:48Z</time>
+      </trkpt>
+      <trkpt lat="32.0301474" lon="118.8584787">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0301033" lon="118.8579369">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0298731" lon="118.8578191">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0291522" lon="118.857855">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0287787" lon="118.8579062">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0280187" lon="118.8580189">
+        <time>2011-12-05T13:16:47Z</time>
+      </trkpt>
+      <trkpt lat="32.0271936" lon="118.8581265">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0259645" lon="118.8582596">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0256105" lon="118.8558511">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.02546" lon="118.8547608">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0253403" lon="118.8537539">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.025328" lon="118.8533808">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0253418" lon="118.8532513">
+        <time>2011-11-18T12:04:56Z</time>
+        <name>南京理工大学6号门</name>
+      </trkpt>
+      <trkpt lat="32.0253249" lon="118.8531816">
+        <time>2011-12-05T13:16:45Z</time>
+      </trkpt>
+      <trkpt lat="32.0253372" lon="118.8524173">
+        <time>2011-12-05T13:16:45Z</time>
+      </trkpt>
+      <trkpt lat="32.0253802" lon="118.8518993">
+        <time>2011-12-05T13:16:46Z</time>
+      </trkpt>
+      <trkpt lat="32.0256219" lon="118.8518775">
+        <time>2012-05-18T13:39:19Z</time>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
