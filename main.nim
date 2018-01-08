@@ -1,12 +1,14 @@
-import os,xmlparser,xmltree,strutils,httpclient,json,future,re
+import os,xmlparser,xmltree,strutils,httpclient,json,future,re, asyncdispatch
 #[
  * coords 需转换的源坐标，多组坐标以“；”分隔
 ]#
 discard """ 单次请求可批量解析100个坐标  """
 const apiEndPoint:string = "http://api.map.baidu.com/geoconv/v1/?coords=$1&from=1&to=5&ak=$2"
+const apiLimit:int = 100
+const indexLimit:int = apiLimit - 1
 
 type
-    Point = tuple[lat: string, lon: string]
+    Point = tuple[lat: string, lon: string ,i:int,j:int]
 
 type
     XY = object
@@ -24,37 +26,65 @@ type
         status *: int
         result *: seq[XY]
 
-proc main() =
-    if paramCount() < 2:
-        quit("")
+proc apiRequest(pts:seq[Point],ak:string,res2: ptr seq[seq[array[2,float]]] ):Future[string] {.async.}  =
     let 
-        ak:string = paramStr(1)
-        gpxPath:string = paramStr(2)
+        client = newAsyncHttpClient()
+        total:int = pts.len
+        extro:bool =  if total mod apiLimit > 0:true else: false
+        steps:int = total /% apiLimit + ord(extro)
+    for step in 0..(steps - 1):
+        let 
+            hindex = min(step * apiLimit + indexLimit,pts.len-1)
+            lindex = (step * apiLimit)
+            ops:seq[Point] = pts[ lindex .. hindex ]
+            url:string = apiEndPoint % [ops.join(";"),ak]
+            content = await client.getContent( url )
+            jsonNode = parseJson(content)
+            res = to(jsonNode,Result)
+            seqs:seq[XY] = res.result
+            seqs2:seq[array[2,float]] = lc[ xy.toArray | ( xy <- seqs), array[2,float] ]
+
+        for i,p in seqs2.pairs:
+            let 
+                point:Point = ops[i]
+
+            res2[point.i][point.j] = p
+    result = replace(repr(res2),re("0x[A-Fa-f0-9]+"),"").replace("ref  --> ","")
+    
+
+proc main(gpxPath,ak:string):Future[string] {.async.}  =
     var xml:XmlNode
     try:
         xml = loadXml(gpxPath)
     except IOError:
-        quit("")
+        quit("Can NOT load gpx file with given path!")
     let trks:seq[XmlNode] =  xml.findAll("trk")
-    let client = newHttpClient()
-    var res2 : seq[seq[array[2,float]]] = @[]
+    var flatSeq:seq[Point] = @[]
+    var res:seq[seq[array[2,float]]] = @[]
+    setlen(res,trks.len)
+    var refer: ptr seq[seq[array[2,float]]] = addr(res)
     for i,trk in trks.pairs:
-        let seg:XmlNode =  trk.findAll("trkseg")[0]
-        let trkptNodes:seq[XmlNode]  = seg.findAll("trkpt")
-        var trkpts:seq[Point] = @[] 
-        for node in trkptNodes:
+        let 
+            seg:XmlNode =  trk.findAll("trkseg")[0]
+            trkptNodes:seq[XmlNode]  = seg.findAll("trkpt")
+        var resi:seq[array[2,float]] =  @[]
+        
+        setlen(resi,trkptNodes.len)
+        res[i] = resi
+        for j,node in trkptNodes.pairs:
             let 
                 lat:string = node.attr("lat")
                 lon:string = node.attr("lon")
-                point:Point = (lat,lon)
-            trkpts.add(point)
-        let url:string = apiEndPoint % [trkpts.join(";"),ak]
-        let response = client.request( url ,httpMethod=HttpGet) #{"status":0,"result":[{"x":32.0259054,"y":118.8463384},
-        let jsonNode = parseJson(response.body)
-        let res = to(jsonNode,Result)
-        let seqs:seq[XY] = res.result
-        let seqs2:seq[array[2,float]] = lc[ xy.toArray | ( xy <- seqs), array[2,float] ]
-        res2.add(seqs2)
-    echo replace(repr(res2),re("0x[A-Fa-f0-9]+"),"")
+                point:Point = (lat,lon,i,j)
+
+            flatSeq.add(point)
+    result = await apiRequest(flatSeq,ak,refer)
+
 when isMainModule:
-    main()
+    if paramCount() < 2:
+        quit("Needs 2 params as least!")
+    let 
+        ak:string = paramStr(1)
+        gpxPath:string = paramStr(2)
+ 
+    echo waitFor main(gpxPath,ak)
