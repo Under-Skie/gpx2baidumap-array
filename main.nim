@@ -1,11 +1,10 @@
-import os,xmlparser,xmltree,strutils,httpclient,json,future,re, asyncdispatch
+import os,xmlparser,xmltree,strutils,httpclient,json,future,re, asyncdispatch,sequtils,marshal
 #[
  * coords 需转换的源坐标，多组坐标以“；”分隔
 ]#
 discard """ 单次请求可批量解析100个坐标  """
 const apiEndPoint:string = "http://api.map.baidu.com/geoconv/v1/?coords=$1&from=1&to=5&ak=$2"
 const apiLimit:int = 100
-const indexLimit:int = apiLimit - 1
 
 type
     Point = tuple[lat: string, lon: string ,i:int,j:int]
@@ -32,9 +31,9 @@ proc apiRequest(pts:seq[Point],ak:string,res2: ptr seq[seq[array[2,float]]] ):Fu
         total:int = pts.len
         extro:bool =  if total mod apiLimit > 0:true else: false
         steps:int = total /% apiLimit + ord(extro)
-    for step in 0..(steps - 1):
+    for step in 0..steps - 1 :
         let 
-            hindex = min(step * apiLimit + indexLimit,pts.len-1)
+            hindex = min(step * apiLimit + apiLimit - 1,pts.len - 1)
             lindex = (step * apiLimit)
             ops:seq[Point] = pts[ lindex .. hindex ]
             url:string = apiEndPoint % [ops.join(";"),ak]
@@ -49,7 +48,7 @@ proc apiRequest(pts:seq[Point],ak:string,res2: ptr seq[seq[array[2,float]]] ):Fu
                 point:Point = ops[i]
 
             res2[point.i][point.j] = p
-    result = replace(repr(res2),re("0x[A-Fa-f0-9]+"),"").replace("ref  --> ","")
+    result = $$ cast[ptr seq[seq[array[2,float]]] ](res2)[]
     
 
 proc main(gpxPath,ak:string):Future[string] {.async.}  =
