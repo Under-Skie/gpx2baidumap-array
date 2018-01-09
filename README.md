@@ -1,14 +1,18 @@
 # gpx2baidumap-array  
 
-compile and run 
+compile and run [debug build]
 
 `nim c -r main.nim <ak> ./data/nlg.gpx `
+
+compile [release build]
+
+`nim c main.nim -d:release`
 
 run compiled bin
 
 `./main <ak> ./data/nlg.gpx `
 
-### Where to find .gp ?  
+### Where to find .gpx ?  
 download **relation**(openstreetmap term) from openstreetmap,at the bottom of left sidebar click "Download XML".
 
 eg. http://www.openstreetmap.org/relation/2196059

@@ -57,6 +57,8 @@ proc main(gpxPath,ak:string):Future[string] {.async.}  =
         xml = loadXml(gpxPath)
     except IOError:
         quit("Can NOT load gpx file with given path!")
+    except XmlError:
+        quit("Can NOT parse gpx file with given path!")
     let trks:seq[XmlNode] =  xml.findAll("trk")
     var flatSeq:seq[Point] = @[]
     var res:seq[seq[array[2,float]]] = @[]
