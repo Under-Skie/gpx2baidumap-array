@@ -6,7 +6,7 @@ compile and run [debug build]
 
 compile [release build]
 
-`nim c main.nim -d:release`
+`nim c -d:release main.nim `
 
 run compiled bin
 
